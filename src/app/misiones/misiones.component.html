@@ -1,64 +1,85 @@
-<div class="container mb-5 mb-sm-0">
+<div class="container mb-5 mb-sm-0"> <!--(loadstart)="cargando()"-->
+  <!--Cargando
+  <div id="cargando" class="d-none">
+    <img src="../../assets/img/ajax-loader-pacman.gif" alt="cargando">
+  </div>-->
+
   <div class="row justify-content-center">
     <div class="col-9 col-md-4 m-5">
       <div class="card text-center borde-image mision">
   <div class="card-header">
-    <h4>Urgente</h4>
+    <h4>{{mision1.rapidez}}</h4>
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Tomar</a>
+    <h5 class="card-title">{{mision1.titulo}}</h5>
+    <p class="card-text">{{mision1.contenido}}</p>
+    <p class="card-text">{{mision1.recompensa}}</p>
+    <a href="#" class="btn btn-info btn-block">{{botonMision}}</a>
   </div>
-  <div class="card-footer text-muted">
-    Hace 2 minutos
+  <div class="card-footer text-secondary font-weight-bold">
+      {{mision1.fecha}}
   </div>
 </div>
     </div>
-    <div class="col-9 col-md-4 m-5">
-      <div class="card text-center borde-image mision">
-  <div class="card-header">
-    <h4>Urgente</h4>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Tomar</a>
-  </div>
-  <div class="card-footer text-muted">
-    Hace 2 minutos
-  </div>
-</div>
-    </div>
-    <div class="col-9 col-md-4 m-5">
-      <div class="card text-center borde-image mision">
-  <div class="card-header">
-    <h4>Urgente</h4>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Tomar</a>
-  </div>
-  <div class="card-footer text-muted">
-    Hace 2 minutos
-  </div>
-</div>
-    </div>
-    <div class="col-9 col-md-4 m-5">
+  
+
+  
+      <div class="col-9 col-md-4 m-5">
         <div class="card text-center borde-image mision">
     <div class="card-header">
-      <h4>Urgente</h4>
+      <h4>{{mision2.rapidez}}</h4>
     </div>
     <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Tomar</a>
+      <h5 class="card-title">{{mision2.titulo}}</h5>
+      <p class="card-text">{{mision2.contenido}}</p>
+      <p class="card-text">{{mision2.recompensa}}</p>
+      <a href="#" class="btn btn-info btn-block">{{botonMision}}</a>
     </div>
-    <div class="card-footer text-muted">
-      Hace 2 minutos
+    <div class="card-footer text-secondary font-weight-bold">
+        {{mision2.fecha}}
     </div>
   </div>
       </div>
-  </div>
+   
+
+   
+        <div class="col-9 col-md-4 m-5">
+          <div class="card text-center borde-image mision">
+      <div class="card-header">
+        <h4>{{mision3.rapidez}}</h4>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{mision3.titulo}}</h5>
+        <p class="card-text">{{mision3.contenido}}</p>
+        <p class="card-text">{{mision3.recompensa}}</p>
+        <a href="#" class="btn btn-info btn-block">{{botonMision}}</a>
+      </div>
+      <div class="card-footer text-secondary font-weight-bold">
+          {{mision3.fecha}}
+      </div>
+    </div>
+        </div>
+     
+
+      
+          <div class="col-9 col-md-4 m-5">
+            <div class="card text-center borde-image mision">
+        <div class="card-header">
+          <h4>{{mision4.rapidez}}</h4>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{mision4.titulo}}</h5>
+          <p class="card-text">{{mision4.contenido}}</p>
+          <p class="card-text">{{mision4.recompensa}}</p>
+          <a href="#" class="btn btn-info btn-block">{{botonMision}}</a>
+        </div>
+        <div class="card-footer text-secondary font-weight-bold">
+            {{mision4.fecha}}
+        </div>
+      </div>
+          </div>
+        
+
+       
+</div>
 </div>
