@@ -33,7 +33,7 @@ export class MisionesComponent implements OnInit {
   }
   mision4: Mision = {
     rapidez: 'Fin de semana',
-    titulo: '´Lavar carro',
+    titulo: 'Lavar carro',
     contenido: 'Lavado simple de automóvil deportivo rojo',
     recompensa: 'Recompensa: $50',
     fecha: 'Hace 2 horas',

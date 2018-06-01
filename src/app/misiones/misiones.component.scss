@@ -14,3 +14,20 @@
     z-index:999; 
     box-shadow: 20px 20px 15px black;
 }
+
+.parallax_misiones { 
+    /* The image used */
+    background-image: url("../../assets/img/anime-background.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+    /* Set a specific height */
+    
+    
+  
+     /*Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

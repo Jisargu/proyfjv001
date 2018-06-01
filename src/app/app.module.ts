@@ -11,6 +11,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { RegistroComponent } from './registro/registro.component';
 import { IngresarComponent } from './ingresar/ingresar.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     PerfilComponent,
     RegistroComponent,
     IngresarComponent,
-    ContactoComponent
+    ContactoComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
