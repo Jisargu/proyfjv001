@@ -4,13 +4,15 @@
     background-size: 100% 100%;*/
     background-color: rgba(222, 184, 135, 0.856);
     font-size: 0.95rem;
+    color: white;
+    font-weight: bold;
+    
 }
-hr{
-border-width: 2px;
-border-color: rgba(94, 62, 23, 0.425);
+.filtro{
+background-color: rgba(46, 139, 86, 0.349);
 }
 
 #map {
-    height: 400px;
+    min-height: 300px;
     width: 100%;
    }
