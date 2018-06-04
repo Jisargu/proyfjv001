@@ -14,18 +14,11 @@ export class ContactoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   
-    $("#contacto").ready(function(){
-      $("input").addClass("wow flip");
-    });
-  
   }
+  
   enviar(){
-   /* $("#email")
-    $("#name")
-    $("#subject")
-    if(tienen la clase invisible)
-    $("button").css("background","red");*/
-}
+   $("#formulario").addClass("d-none");
+   $("#enviado").removeClass("d-none").show("blind");
+  }
 
 }
