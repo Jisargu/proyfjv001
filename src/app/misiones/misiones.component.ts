@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Mision } from "../misiones";
+//Variables para usar jquery
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-misiones',
@@ -43,5 +46,6 @@ export class MisionesComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
 }

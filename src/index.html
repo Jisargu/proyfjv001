@@ -22,7 +22,25 @@
   <!--header-->
   <link href="assets/css/general_and_parallax.css" rel="stylesheet" />
 
-  <!--Contacto-->
+  <!--navbar-->
+  <script>$(function(){ 
+      var navMain = $(".navbar-collapse"); // avoid dependency on #id
+      // "a:not([data-toggle])" - to avoid issues caused
+      // when you have dropdown inside navbar
+      navMain.on("click", "a:not([data-toggle])", null, function () {
+          navMain.collapse('hide');
+      });
+  });</script>
+  <script>
+    $(window).on("resize load",function() {
+  if($(window).width()<966){
+  $("#navbar_contenido").removeClass("nav-pills");
+}
+else{
+  $("#navbar_contenido").addClass("nav-pills");
+}
+});
+  </script>
   
 
 <!--Google maps-->
@@ -39,7 +57,7 @@
   </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
   <app-root></app-root>
 </body>
 
