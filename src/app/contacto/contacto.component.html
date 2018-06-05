@@ -1,13 +1,18 @@
 <div id="contacto" class="container-fluid">
-  <div class="row justify-content-center align-items-center parallax" style="background-image: url(../../assets/img/anime_water_grass.png)">
-
+  
+  <div class="row justify-content-center align-items-center parallax" style="background-image: url(../../assets/img/fan_min_treehouse.jpg)">
     <div id="enviado" class="col-12 d-none">
       <div class="mensaje_enviado text-center">Su mensaje ha sido enviado. Gracias</div>
     </div>
-
+    
     <form id="formulario" ngNativeValidate (submit)="enviar()">
+    
+      <h2 class="text-white">Contacto</h2>
+    
       <div class="form-row">
+        
         <div class="col-md-4 mb-3">
+          
           <label for="validationDefault01">Nombre</label>
           <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" value="" required>
         </div>
