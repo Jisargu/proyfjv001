@@ -19,6 +19,7 @@
 
 :root {
   --color-pills: rgba(46, 46, 138, 0.514);
+  --color-inputs: rgb(56, 54, 54);
 }
 
 h1,
@@ -434,9 +435,7 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 }
 
 .btn.btn-border,
-.btn.btn-link {
-  
-}
+.btn.btn-link {}
 
 .btn:hover,
 .btn:focus,
@@ -461,7 +460,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 .btn.btn-link:active,
 .btn.btn-link.active,
 .open>.btn.btn-link.dropdown-toggle {
-  
   color: #403D39;
 }
 
@@ -490,7 +488,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 
 .btn[class*="btn-outline-"] {
   background-image: none;
-  
 }
 
 .btn-just-icon {
@@ -556,7 +553,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 .btn-primary.btn-link:active,
 .btn-primary.btn-link.active,
 .open>.btn-primary.btn-link.dropdown-toggle {
-  
   color: #34b5b8;
 }
 
@@ -599,7 +595,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 .btn-success.btn-link:active,
 .btn-success.btn-link.active,
 .open>.btn-success.btn-link.dropdown-toggle {
-  
   color: #44c47d;
 }
 
@@ -642,7 +637,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 .btn-info.btn-link:active,
 .btn-info.btn-link.active,
 .open>.btn-info.btn-link.dropdown-toggle {
-  
   color: #2ba9cd;
 }
 
@@ -685,7 +679,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 .btn-warning.btn-link:active,
 .btn-warning.btn-link.active,
 .open>.btn-warning.btn-link.dropdown-toggle {
-  
   color: #fab526;
 }
 
@@ -728,7 +721,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 .btn-danger.btn-link:active,
 .btn-danger.btn-link.active,
 .open>.btn-danger.btn-link.dropdown-toggle {
-  
   color: #f33816;
 }
 
@@ -771,7 +763,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 .btn-neutral.btn-link:active,
 .btn-neutral.btn-link.active,
 .open>.btn-neutral.btn-link.dropdown-toggle {
-  
   color: #403D39;
 }
 
@@ -836,7 +827,6 @@ fieldset[disabled] .btn-outline-default:focus,
 fieldset[disabled] .btn-outline-default.focus,
 fieldset[disabled] .btn-outline-default:active,
 fieldset[disabled] .btn-outline-default.active {
-  
   border-color: var(--color-pills);
 }
 
@@ -893,7 +883,6 @@ fieldset[disabled] .btn-outline-primary:focus,
 fieldset[disabled] .btn-outline-primary.focus,
 fieldset[disabled] .btn-outline-primary:active,
 fieldset[disabled] .btn-outline-primary.active {
-  
   border-color: #51cbce;
 }
 
@@ -950,7 +939,6 @@ fieldset[disabled] .btn-outline-success:focus,
 fieldset[disabled] .btn-outline-success.focus,
 fieldset[disabled] .btn-outline-success:active,
 fieldset[disabled] .btn-outline-success.active {
-  
   border-color: #6bd098;
 }
 
@@ -1007,7 +995,6 @@ fieldset[disabled] .btn-outline-info:focus,
 fieldset[disabled] .btn-outline-info.focus,
 fieldset[disabled] .btn-outline-info:active,
 fieldset[disabled] .btn-outline-info.active {
-  
   border-color: #51bcda;
 }
 
@@ -1064,7 +1051,6 @@ fieldset[disabled] .btn-outline-warning:focus,
 fieldset[disabled] .btn-outline-warning.focus,
 fieldset[disabled] .btn-outline-warning:active,
 fieldset[disabled] .btn-outline-warning.active {
-  
   border-color: #fbc658;
 }
 
@@ -1121,7 +1107,6 @@ fieldset[disabled] .btn-outline-danger:focus,
 fieldset[disabled] .btn-outline-danger.focus,
 fieldset[disabled] .btn-outline-danger:active,
 fieldset[disabled] .btn-outline-danger.active {
-  
   border-color: #f5593d;
 }
 
@@ -1178,7 +1163,6 @@ fieldset[disabled] .btn-outline-neutral:focus,
 fieldset[disabled] .btn-outline-neutral.focus,
 fieldset[disabled] .btn-outline-neutral:active,
 fieldset[disabled] .btn-outline-neutral.active {
-  
   border-color: #FFFFFF;
 }
 
@@ -1220,7 +1204,6 @@ fieldset[disabled] .btn-outline-neutral.active {
 .btn-neutral.btn-link:active,
 .btn-neutral.btn-link.active,
 .open>.btn-neutral.btn-link.dropdown-toggle {
-  
   color: #FFFFFF;
 }
 
@@ -1250,9 +1233,7 @@ fieldset[disabled] .btn-outline-neutral.active {
 }
 
 .btn-neutral.btn-link:active,
-.btn-neutral.btn-link.active {
-  
-}
+.btn-neutral.btn-link.active {}
 
 .btn:disabled,
 .btn[disabled],
@@ -1399,7 +1380,7 @@ fieldset[disabled] .btn-outline-neutral.active {
   background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
   border-radius: 4px;
-  color: var(--color-pills);
+  color: var(--color-inputs);
   font-size: 14px;
   padding: 7px 12px;
   height: 40px;
@@ -2447,8 +2428,6 @@ textarea.form-control {
   color: #9A9A9A;
 }
 
-
-
 .no-transition {
   -webkit-transition: none;
   -moz-transition: none;
@@ -2616,7 +2595,6 @@ textarea.form-control {
 }
 
 .card.card-plain {
-  
   box-shadow: none;
   border-radius: 0;
 }
@@ -2992,7 +2970,6 @@ textarea.form-control {
   padding: 0;
   font-weight: 300;
   line-height: 54px;
-  
 }
 
 .subscribe-line .btn:not(.btn-lg) {
@@ -3482,11 +3459,9 @@ textarea.form-control {
     margin-left: 0;
   }
   body>.navbar-collapse.collapse {
-    display: none !important;}
+    display: none !important;
   }
-
-
-
+}
 
 .dropdown-sharing li {
   color: var(--color-pills);
@@ -3672,8 +3647,6 @@ textarea.form-control {
   line-height: 35px;
 }
 
-
-
 .section-nucleo-icons {
   padding: 100px 0;
 }
@@ -3835,7 +3808,6 @@ textarea.form-control {
 .nav-tabs .nav-item .nav-link {
   border: 0 none;
   color: #A49E93;
-  
 }
 
 .nav-tabs .nav-item .nav-link:hover {
@@ -3854,7 +3826,6 @@ textarea.form-control {
 .nav-tabs .nav-item .nav-link.active,
 .nav-tabs .nav-item .nav-link.active:hover,
 .nav-tabs .nav-item .nav-link.active:focus {
-  
   border: 0 none;
 }
 
@@ -3883,8 +3854,6 @@ textarea.form-control {
   right: 40%;
   bottom: 6px;
 }
-
-
 
 .nav-tabs .dropdown-menu {
   margin-top: -6px;
@@ -4022,7 +3991,6 @@ textarea.form-control {
 .pagination>.page-item:first-child>span,
 .pagination>.page-item:last-child>.page-link,
 .pagination>.page-item:last-child>span {
-  
   border: 2px solid #f5593d;
   border-radius: 20px;
   color: #f5593d;
@@ -4079,7 +4047,6 @@ textarea.form-control {
 .nav-text>li>a:focus,
 .nav-icons>li>a:hover,
 .nav-icons>li>a:focus {
-  
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -4439,7 +4406,6 @@ textarea.form-control {
   width: 100%;
 }
 
-
 .modal.fade .modal-dialog {
   transform: none;
   -webkit-transform: none;
@@ -4489,7 +4455,6 @@ textarea.form-control {
   h6 {
     font-size: 1em;
   }
-  
   .bar1,
   .bar2,
   .bar3 {
@@ -4753,7 +4718,6 @@ textarea.form-control {
       opacity: 1;
     }
   }
-  
   .social-line .btn {
     margin: 0 0 10px 0;
   }
@@ -4785,7 +4749,6 @@ textarea.form-control {
   .form-control+.form-control-feedback {
     margin-top: -8px;
   }
-  
   .btn.dropdown-toggle {
     margin-bottom: 0;
   }
@@ -4910,10 +4873,8 @@ textarea.form-control {
 }
 
 @media screen and (max-width: 991px) {
-  
   .dropdown.show .dropdown-menu,
   .dropdown .dropdown-menu {
-    
     border: 0;
     transition: none;
     -webkit-box-shadow: none;
@@ -4925,7 +4886,6 @@ textarea.form-control {
   .dropdown.show .dropdown-menu .dropdown-item:focus,
   .dropdown .dropdown-menu .dropdown-item:hover,
   .dropdown .dropdown-menu .dropdown-item:focus {
-    
     border-radius: 0;
   }
   .dropdown.show .dropdown-menu .dropdown-item a:hover,
@@ -5135,7 +5095,6 @@ textarea.form-control {
   }
   .burger-menu .dropdown.show .dropdown-menu,
   .burger-menu .dropdown .dropdown-menu {
-    
     border: 0;
     transition: none;
     -webkit-box-shadow: none;
@@ -5147,7 +5106,6 @@ textarea.form-control {
   .burger-menu .dropdown.show .dropdown-menu .dropdown-item:focus,
   .burger-menu .dropdown .dropdown-menu .dropdown-item:hover,
   .burger-menu .dropdown .dropdown-menu .dropdown-item:focus {
-    
     border-radius: 0;
   }
   .burger-menu .dropdown.show .dropdown-menu .dropdown-item a:hover,
@@ -5215,9 +5173,7 @@ textarea.form-control {
   list-style: none;
 }
 
-.bootstrap-datetimepicker-widget a .btn:hover {
-  
-}
+.bootstrap-datetimepicker-widget a .btn:hover {}
 
 .bootstrap-datetimepicker-widget.dropdown-menu {
   padding: 4px;
@@ -5303,7 +5259,6 @@ textarea.form-control {
   padding: 6px 0;
   border-width: 0;
   color: var(--color-pills);
-  
 }
 
 .bootstrap-datetimepicker-widget a[data-action="togglePicker"],
@@ -5312,7 +5267,6 @@ textarea.form-control {
 }
 
 .bootstrap-datetimepicker-widget a[data-action]:hover {
-  
   color: rgba(255, 255, 255, 0.85);
 }
 

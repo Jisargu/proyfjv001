@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
 //import 'rxjs/add/operator/map'; //para agregar documento
 
 //Variables para usar jquery
-declare var jquery:any;
-declare var $ :any;
+declare var jquery: any;
+declare var $: any;
 
 interface Misiones {
   rapidez: string;
@@ -27,7 +27,7 @@ export class MisionesComponent implements OnInit {
 
   misionesCol: AngularFirestoreCollection<Misiones>;
   misiones: Observable<Misiones[]>;
- // misiones=[];
+  // misiones=[];
   /*
  mision1: Mision = {
     rapidez: 'Urgente',
@@ -65,7 +65,7 @@ export class MisionesComponent implements OnInit {
     this.misionesCol = this.afs.collection('misiones');
     this.misiones = this.misionesCol.valueChanges();
 
-    }
+  }
 
 
 }

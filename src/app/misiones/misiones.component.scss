@@ -1,26 +1,22 @@
-.card-img-top{
+.card-img-top {
   height: 50px;
 }
- .card-header h4 span{
-border-radius: 5px 5px;
-color: black;
- }
 
-.parallax_misiones { 
-    /* The image used */
-    background-image: url("../../assets/img/anime-background.jpg");
+.card-header h4 span {
+  border-radius: 5px 5px;
+  color: black;
+}
+
+.parallax_misiones {
+  /* The image used */
+  background-image: url("../../assets/img/anime-background.jpg");
   background-size: cover;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-    /* Set a specific height */
-    
-    
-  
-     /*Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  
+  /* Set a specific height */
+  /*Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

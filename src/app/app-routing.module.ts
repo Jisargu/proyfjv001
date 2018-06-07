@@ -4,7 +4,7 @@ import { IngresarComponent } from "../app/ingresar/ingresar.component";
 import { RegistroComponent } from "../app/registro/registro.component";
 import { PerfilComponent } from "../app/perfil/perfil.component";
 import { MisionesComponent } from "../app/misiones/misiones.component";
-import {ContactoComponent} from "../app/contacto/contacto.component";
+import { ContactoComponent } from "../app/contacto/contacto.component";
 
 const routes: Routes = [
   {
