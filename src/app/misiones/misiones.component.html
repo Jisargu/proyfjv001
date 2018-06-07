@@ -4,7 +4,29 @@
     <img src="../../assets/img/ajax-loader-pacman.gif" alt="cargando">
   </div>-->
 
-  <div class="row justify-content-center">
+
+
+  <div class="row justify-content-center" >
+<!--Usando firestore db -->
+      <div *ngFor="let mision of misiones | async" class="col-9 col-md-4 m-5">
+          <div class="card text-center ">
+            <img class="card-img-top" src="../../assets/img/wood_navbar.png" alt="Card image cap">
+      <div class="card-header">
+        <h4><span>{{mision.rapidez}}</span></h4>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{mision.titulo}}</h5>
+        <p class="card-text">{{mision.contenido}}</p>
+        <p class="card-text">{{mision.recompensa}}</p>
+        <a href="#" class="btn btn-info btn-block">{{botonMision}}</a>
+      </div>
+      <div class="card-footer text-secondary font-weight-bold">
+          {{mision.fecha}}
+      </div>
+    </div>
+        </div>
+
+      <!-- sin ngfor usando objetos del component.ts
     <div class="col-9 col-md-4 m-5">
       <div class="card text-center ">
         <img class="card-img-top" src="../../assets/img/wood_navbar.png" alt="Card image cap">
@@ -83,7 +105,7 @@
       </div>
           </div>
         
-
+-->
        
 </div>
 </div>

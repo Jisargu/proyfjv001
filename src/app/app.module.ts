@@ -13,6 +13,19 @@ import { IngresarComponent } from './ingresar/ingresar.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { HeaderComponent } from './header/header.component';
 
+//Firestore
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
+var firebaseConfig = {
+  apiKey: "AIzaSyAX1r3r1V0Tgvqk9asCOCcoqIAEjC13CrY",
+  authDomain: "misionesvecinales.firebaseapp.com",
+  databaseURL: "https://misionesvecinales.firebaseio.com",
+  projectId: "misionesvecinales",
+  storageBucket: "misionesvecinales.appspot.com",
+  messagingSenderId: "511270768265"
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +42,8 @@ import { HeaderComponent } from './header/header.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

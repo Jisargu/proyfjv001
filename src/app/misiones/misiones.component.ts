@@ -1,8 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Mision } from "../misiones";
+//Firestore
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
+import { Observable } from 'rxjs';
+//import 'rxjs/add/operator/map'; //para agregar documento
+
 //Variables para usar jquery
 declare var jquery:any;
 declare var $ :any;
+
+interface Misiones {
+  rapidez: string;
+  titulo: string;
+  contenido: string;
+  recompensa: string;
+  fecha: string;
+}
 
 @Component({
   selector: 'app-misiones',
@@ -11,8 +24,11 @@ declare var $ :any;
 })
 export class MisionesComponent implements OnInit {
   botonMision = "Tomar";
+
+  misionesCol: AngularFirestoreCollection<Misiones>;
+  misiones: Observable<Misiones[]>;
  // misiones=[];
-  
+  /*
  mision1: Mision = {
     rapidez: 'Urgente',
     titulo: 'Pasear perros',
@@ -40,12 +56,16 @@ export class MisionesComponent implements OnInit {
     contenido: 'Lavado simple de automóvil deportivo rojo',
     recompensa: 'Recompensa: $50',
     fecha: 'Hace 2 horas',
-  }
+  }*/
 
-  constructor() { }
+  constructor(private afs: AngularFirestore) { }
 
   ngOnInit() {
-  }
+
+    this.misionesCol = this.afs.collection('misiones');
+    this.misiones = this.misionesCol.valueChanges();
+
+    }
 
 
 }
