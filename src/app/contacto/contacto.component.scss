@@ -31,6 +31,10 @@ textarea {
 textarea:focus {
   background-color: transparent;
 }
+textarea{
+  max-height: 200px;
+  resize: vertical;
+}
 
 ::placeholder {
   color: $placeholder-color;

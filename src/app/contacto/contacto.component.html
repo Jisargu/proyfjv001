@@ -2,7 +2,7 @@
 
   <div class="row justify-content-center align-items-center parallax" style="background-image: url(../../assets/img/fan_min_treehouse.jpg)">
     <div id="enviado" class="col-12 d-none">
-      <div class="mensaje_enviado text-center">Su mensaje ha sido enviado. Gracias</div>
+      <div class="mensaje_enviado text-center">Su mensaje ha sido enviado. Gracias {{nombreContacto}}.</div>
     </div>
 
     <form id="formulario" ngNativeValidate (submit)="enviar()">
@@ -14,32 +14,32 @@
         <div class="col-md-4 mb-3">
 
           <label for="validationDefault01">Nombre</label>
-          <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" value="" required>
+          <input type="text" class="form-control" id="validationDefault01" name="nombreContacto" placeholder="Nombre" maxlength="50" [(ngModel)]="nombreContacto" required>
         </div>
         <div class="col-md-4 mb-3">
           <label for="validationDefault02">Apellido</label>
-          <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido" value="" required>
+          <input type="text" class="form-control" id="validationDefault02" name="apellidoContacto" placeholder="Apellido"  maxlength="50" [(ngModel)]="apellidoContacto" required>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="validationDefaultUsername">Apodo (opcional)</label>
+          <label for="validationDefaultUsername">Apodo</label>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroupPrepend2">@</span>
             </div>
-            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Apodo" aria-describedby="inputGroupPrepend2">
+            <input type="text" class="form-control" id="validationDefaultUsername" name="apodoContacto" placeholder="Apodo" maxlength="20" aria-describedby="inputGroupPrepend2" [(ngModel)]="apodoContacto" required>
           </div>
         </div>
       </div>
       <div class="form-row">
         <div class="col-12 mb-3">
           <label for="validationDefault03">Correo</label>
-          <input type="text" class="form-control" id="validationDefault03" placeholder="Correo" required>
+          <input type="email" class="form-control" id="validationDefault03" name="correoContacto" placeholder="Correo" maxlength="100" [(ngModel)]="correoContacto" required>
         </div>
       </div>
       <div class="form-row">
         <div class="col-12">
           <label for="validationDefaultMessage">Mensaje</label>
-          <textarea class="form-control" id="validationDefaultMessage" rows="3" required></textarea>
+          <textarea class="form-control" id="validationDefaultMessage" name="mensajeContacto" rows="3" maxlength="500" [(ngModel)]="mensajeContacto" required></textarea>
         </div>
       </div>
       <button class="btn btn-primary mt-3" type="submit">Enviar</button>

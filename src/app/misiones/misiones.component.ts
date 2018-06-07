@@ -3,7 +3,7 @@ import { Mision } from "../misiones";
 //Firestore
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
-//import 'rxjs/add/operator/map'; //para agregar documento
+//import 'rxjs/add/operator/map'; //para single doc
 
 //Variables para usar jquery
 declare var jquery: any;
@@ -24,6 +24,7 @@ interface Misiones {
 })
 export class MisionesComponent implements OnInit {
   botonMision = "Tomar";
+  textoRecompensa="Recompensa: ";
 
   misionesCol: AngularFirestoreCollection<Misiones>;
   misiones: Observable<Misiones[]>;
