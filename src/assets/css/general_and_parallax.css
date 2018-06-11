@@ -20,10 +20,10 @@
 :root {
   --color-pills: rgba(46, 46, 138, 0.514);
   --color-inputs: rgb(56, 54, 54);
-  --header_bg: rgb(192, 190, 190);
+  --header_bg: rgb(175, 175, 175);
   --primer_color_gradiente: white;
-  --segundo_color_gradiente: ivory;
-  --filtro_header: rgba(179, 179, 179, 0.233);
+  --segundo_color_gradiente: rgb(228, 228, 224);
+  --filtro_header: rgba(12, 12, 12, 0.247);
 }
 
 h1,
@@ -5973,8 +5973,9 @@ textarea.form-control {
 
 .parallax {
   /*The image used */
-  background-image: url("../img/colonia_calle.jpg");
+  /*background-image: url("../img/anime_house.jpg");*/
   /* Set a specific height */
+  background-color: transparent;
   height: 700px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
