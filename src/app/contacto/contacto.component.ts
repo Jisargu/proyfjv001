@@ -18,7 +18,6 @@ export class ContactoComponent implements OnInit {
 
   nombreContacto: string;
   apellidoContacto: string;
-  apodoContacto: string;
   correoContacto: string;
   mensajeContacto: string;
 
@@ -31,7 +30,7 @@ export class ContactoComponent implements OnInit {
     //Para agregar datos a firestore
     this.afs.collection('contacto').add({
       'nombre': this.nombreContacto,
-      'apellido': this.apellidoContacto, 'apodo': this.apodoContacto,
+      'apellido': this.apellidoContacto,
       'correo': this.correoContacto, 'mensaje': this.mensajeContacto
     });
     //Para ocultar formulario y mostrar mensaje de enviado

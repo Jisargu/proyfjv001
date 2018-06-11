@@ -20,6 +20,10 @@
 :root {
   --color-pills: rgba(46, 46, 138, 0.514);
   --color-inputs: rgb(56, 54, 54);
+  --header_bg: rgb(192, 190, 190);
+  --primer_color_gradiente: white;
+  --segundo_color_gradiente: ivory;
+  --filtro_header: rgba(179, 179, 179, 0.233);
 }
 
 h1,
@@ -5699,7 +5703,7 @@ textarea.form-control {
 }
 
 .page-header {
-  background-color: #B2AFAB;
+  background-color: var(--header_bg);
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
@@ -5714,7 +5718,7 @@ textarea.form-control {
 }
 
 .page-header .filter::after {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--filtro_header);
   content: "";
   display: block;
   height: 100%;
@@ -5872,7 +5876,7 @@ textarea.form-control {
 .title-brand .type {
   position: absolute;
   font-size: 20px;
-  background: #132026;
+  background: #FFFFFF;
   padding: 6px 10px;
   border-radius: 4px;
   top: 0;
@@ -5885,12 +5889,12 @@ textarea.form-control {
   font-size: 5.5em;
   font-weight: 700;
   margin: 0;
-  color: #FFFFFF;
+  color: white;
   background: #fbf8ec;
-  background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-  background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-  background: -ms-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-  background: linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
+  background: -moz-linear-gradient(top, var(--primer_color_gradiente) 35%, var(--segundo_color_gradiente) 100%);
+  background: -webkit-linear-gradient(top, var(--primer_color_gradiente) 35%, var(--segundo_color_gradiente) 100%);
+  background: -ms-linear-gradient(top, var(--primer_color_gradiente) 35%, var(--segundo_color_gradiente) 100%);
+  background: linear-gradient(to bottom, var(--primer_color_gradiente) 35%, var(--segundo_color_gradiente) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5968,8 +5972,8 @@ textarea.form-control {
 }
 
 .parallax {
-  /* The image used */
-  background-image: url("assets/img/colonia.jpg");
+  /*The image used */
+  background-image: url("../img/cloudy_dark_bg.jpg");
   /* Set a specific height */
   height: 700px;
   /* Create the parallax scrolling effect */

@@ -1,33 +1,24 @@
 <div id="contacto" class="container-fluid">
 
-  <div class="row justify-content-center align-items-center parallax" style="background-image: url(../../assets/img/fan_min_treehouse.jpg)">
+  <!--<div class="row justify-content-center align-items-center parallax" style="background-color: ivory;">-->
     <div id="enviado" class="col-12 d-none">
       <div class="mensaje_enviado text-center">Su mensaje ha sido enviado. Gracias {{nombreContacto}}.</div>
     </div>
-
+<div class="col-12">
     <form id="formulario" ngNativeValidate (submit)="enviar()">
 
       <h2 class="text-white">Contacto</h2>
 
       <div class="form-row">
 
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-3">
 
           <label for="validationDefault01">Nombre</label>
           <input type="text" class="form-control" id="validationDefault01" name="nombreContacto" placeholder="Nombre" maxlength="50" [(ngModel)]="nombreContacto" required>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 mb-3">
           <label for="validationDefault02">Apellido</label>
           <input type="text" class="form-control" id="validationDefault02" name="apellidoContacto" placeholder="Apellido"  maxlength="50" [(ngModel)]="apellidoContacto" required>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationDefaultUsername">Apodo</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupPrepend2">@</span>
-            </div>
-            <input type="text" class="form-control" id="validationDefaultUsername" name="apodoContacto" placeholder="Apodo" maxlength="20" aria-describedby="inputGroupPrepend2" [(ngModel)]="apodoContacto" required>
-          </div>
         </div>
       </div>
       <div class="form-row">
@@ -44,5 +35,6 @@
       </div>
       <button class="btn btn-primary mt-3" type="submit">Enviar</button>
     </form>
-  </div>
+    </div>
+  <!--</div>-->
 </div>

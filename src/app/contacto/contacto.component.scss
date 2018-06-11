@@ -6,7 +6,8 @@ $placeholder-color: rgb(230, 220, 220);
   left: 50%;
   transform: translate(-50%, -75%);
   background-color: $fondo-contacto;
-  color: #86d9ab;
+  //color: #86d9ab;
+  color:white;
   font-size: 2.5rem;
 }
 
@@ -20,7 +21,7 @@ $placeholder-color: rgb(230, 220, 220);
   border: 2px solid transparent;
   padding: 10px;
   border-radius: 30px 20px;
-  box-shadow: 8px 8px rgba(15, 15, 22, 0.815);
+  box-shadow: 5px 5px rgba(15, 15, 22, 0.815);
 }
 
 #formulario input,
@@ -50,4 +51,7 @@ textarea{
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: $placeholder-color;
+}
+h2{
+  margin:0;
 }

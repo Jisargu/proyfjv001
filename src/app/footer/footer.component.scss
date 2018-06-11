@@ -1,18 +1,23 @@
-.footer{
-    /*background-image: url(../../assets/img/colonia.jpg);
+.footer {
+  /*background-image: url(../../assets/img/colonia.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;*/
-    background-color: rgba(222, 184, 135, 0.856);
-    font-size: 0.95rem;
-    color: white;
-    font-weight: bold;
-    
+  //background-color: rgba(222, 184, 135, 0.856);
+  background-color: transparent;
+  font-size: 0.95rem;
+  color: white;
+  font-weight: bold;
+  
 }
-.filtro{
-background-color: rgba(46, 139, 86, 0.349);
+
+.filtro {
+  /*background-color: rgba(46, 139, 86, 0.349);*/
+  background-color: rgba(101, 103, 107, 0.89);
+  
 }
 
 #map {
-    min-height: 300px;
-    width: 100%;
-   }
+  min-height: 300px;
+  width: 100%;
+}
+
