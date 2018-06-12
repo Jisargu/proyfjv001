@@ -1,10 +1,7 @@
 $fondo-contacto: rgba(101, 103, 107, .89);
 $placeholder-color: rgb(230, 220, 220);
 .mensaje_enviado {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -75%);
+ 
   background-color: $fondo-contacto;
   //color: #86d9ab;
   color:white;

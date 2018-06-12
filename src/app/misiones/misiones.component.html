@@ -9,7 +9,7 @@
 
   <div class="row justify-content-center">
     <!--Usando firestore db -->
-    <div *ngFor="let mision of misiones | async" class="col-9 col-md-7 col-lg-4 m-5 wow fadeInDown">
+    <div *ngFor="let mision of misiones | async" class="col-9 col-md-7 col-lg-4 m-5 wow swing">
       <div class="card text-center bg-light ">
         <!--<img class="card-img-top" src="../../assets/img/wood_navbar.png" alt="Card image cap">-->
         <div class="card-header">
@@ -21,7 +21,7 @@
           <h5 class="card-title ">{{mision.titulo}}</h5>
           <p class="card-text">{{mision.contenido}}</p>
           <p class="card-text">{{textoRecompensa}} {{mision.recompensa}}</p>
-          <a href="#" class="btn btn-info btn-block">{{botonMision}}</a>
+          <div class="btn btn-info btn-block">{{botonMision}}</div>
         </div>
         <div class="card-footer text-secondary font-weight-bold">
           {{mision.fecha}}
